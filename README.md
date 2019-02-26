@@ -33,6 +33,11 @@ Install [librdkafka](https://github.com/edenhill/librdkafka)
     ./configure
     make
     sudo make install
+    
+    cat /etc/ld.so.conf
+    include ld.so.conf.d/*.conf
+    echo "/usr/local/lib" >> /etc/ld.so.conf
+    ldconfig
 
 Compilation
 ----
